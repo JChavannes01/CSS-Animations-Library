@@ -1,0 +1,243 @@
+<style type="text/css">
+    /*Syntax voor animaties: tussen haakjes staan de default waarden
+	 .classname { -webkit-animation: name (none) duration (0) timing-function (ease) delay (0) iteration-count (1) direction (normal) fill-mode (none) play-state (running); #(voor Safari 4.0 - 8.0)
+			  -animation: name (none) duration (0) timing-function (ease) delay (0) iteration-count (1) direction (normal) fill-mode (none) play-state (running);
+	}
+	*/
+
+	.Janko-opacity {
+	  -webkit-animation: opac 0.8s;
+	  animation: opac 0.8s
+	}
+	
+	.Janko-fading {
+	  -webkit-animation: opac 0.8s reverse forwards;
+	  animation: opac 0.8s reverse forwards;
+	}
+	
+	/*alle -webkit- objecten zijn voor Safari 4.0 - 8.0*/
+	@-webkit-keyframes opac {
+	  from {
+		opacity: 0
+	  }
+	  to {
+		opacity: 1
+	  }
+	}
+
+	@keyframes opac {
+	  from {
+		opacity: 0
+	  }
+	  to {
+		opacity: 1
+	  }
+	}
+
+	.Janko-top {
+	  position: relative;
+	  -webkit-animation: animatetop 0.4s;
+	  animation: animatetop 0.4s
+	}
+
+	@-webkit-keyframes animatetop {
+	  from {
+		top: -300px;
+		opacity: 0
+	  }
+	  to {
+		top: 0;
+		opacity: 1
+	  }
+	}
+
+	@keyframes animatetop {
+	  from {
+		top: -300px;
+		opacity: 0
+	  }
+	  to {
+		top: 0;
+		opacity: 1
+	  }
+	}
+
+	.Janko-bottom {
+	  position: relative;
+	  -webkit-animation: animatebottom 0.4s;
+	  animation: animatebottom 0.4s
+	}
+
+	@-webkit-keyframes animatebottom {
+	  from {
+		bottom: -300px;
+		opacity: 0
+	  }
+	  to {
+		bottom: 0px;
+		opacity: 1
+	  }
+	}
+
+	@keyframes animatebottom {
+	  from {
+		bottom: -300px;
+		opacity: 0
+	  }
+	  to {
+		bottom: 0;
+		opacity: 1
+	  }
+	}
+
+	.Janko-left {
+	  position: relative;
+	  -webkit-animation: animateleft 0.4s;
+	  animation: animateleft 0.4s
+	}
+
+	@-webkit-keyframes animateleft {
+	  from {
+		left: -300px;
+		opacity: 0
+	  }
+	  to {
+		left: 0;
+		opacity: 1
+	  }
+	}
+
+	@keyframes animateleft {
+	  from {
+		left: -300px;
+		opacity: 0
+	  }
+	  to {
+		left: 0;
+		opacity: 1
+	  }
+	}
+
+	.Janko-right {
+	  position: relative;
+	  -webkit-animation: animateright 0.4s;
+	  animation: animateright 0.4s
+	}
+
+	@-webkit-keyframes animateright {
+	  from {
+		right: -300px;
+		opacity: 0
+	  }
+	  to {
+		right: 0;
+		opacity: 1
+	  }
+	}
+
+	@keyframes animateright {
+	  from {
+		right: -300px;
+		opacity: 0
+	  }
+	  to {
+		right: 0;
+		opacity: 1
+	  }
+	}
+
+	.Janko-zoom {
+	  -webkit-animation: animatezoom 0.6s;
+	  animation: animatezoom 0.6s
+	}
+
+	@-webkit-keyframes animatezoom {
+	  from {
+		-webkit-transform: scale(0)
+	  }
+	  to {
+		-webkit-transform: scale(1)
+	  }
+	}
+
+	@keyframes animatezoom {
+	  from {
+		transform: scale(0)
+	  }
+	  to {
+		transform: scale(1)
+	  }
+	}
+
+
+	/* Mogelijkheid om individuele attributen aan te passen zoals duur, richting 
+	maar NIET de beweging zelf (bv. verder schuiven bij .Janko-top is niet mogelijk)*/
+
+	.Janko-duration {
+	  -webkit-animation-duration: 4s;
+	  animation-duration: 4s;
+	}
+
+	.Janko-timing {
+	  -webkit-animation-timing-function: linear;
+	  animation-timing-function: linear;
+	}
+
+
+	/*==========================CONTROL==========================*/
+	.Janko-restart {} /*Only used for restarting animations, not altering styling*/
+
+	/*=========Test animations - werken nog niet (goed)=========*/
+	.Janko-bounce {
+	  position: relative;
+	  animation: bounce 1.2s 1;
+	}
+
+	@keyframes bounce {
+	  from {
+		top: -50px;
+		animation-timing-function: ease-in;
+	  }
+	  33% {
+		top: 0px;
+		animation-timing-function: ease-out;
+	  }
+	  67% {
+		top: -25px;
+		animation-timing-function: ease-in;
+	  }
+	  to {
+		top: 0px;
+	  }
+	}
+
+	.Janko-topright {
+	  position: absolute;
+	  -webkit-animation: animatetopright 4s;
+	  animation: animatetopright 4s
+	}
+
+	@-webkit-keyframes animatetopright {
+	  from {
+		opacity: 0
+	  }
+	  to {
+		right: 0;
+		top: 0;
+		opacity: 1
+	  }
+	}
+
+	@keyframes animatetopright {
+	  from {
+		right: initial;
+		top: initial;
+		opacity: 0
+	  }
+	  to {
+		right: 0;
+		top: 0;
+		opacity: 1
+	  }
+	}
+</style>

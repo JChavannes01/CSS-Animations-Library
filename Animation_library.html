@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Animation library example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/reanimate.js"></script>
+        <link rel="stylesheet" href="./css/animations.css"/>
+        <!--Bootstrap imports-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .box {
+                background: blue;
+                margin: 10px;
+				margin-top: 50px;
+                height: 50px;
+                width: 50px;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="box Janko-restart Janko-bottom"></div>
+				</div>
+				<div class="col-md-1">
+                    <div class="box Janko-bounce"></div>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-md-2">
+                    <button class="btn btn-default btn-block" id="clickMe">Click me!</button>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>

@@ -5,12 +5,12 @@
 	}
 	*/
 
-	.Janko-opacity {
+	.animate-opacity {
 	  -webkit-animation: opac 0.8s;
 	  animation: opac 0.8s
 	}
 	
-	.Janko-fading {
+	.animate-fading {
 	  -webkit-animation: opac 0.8s reverse forwards;
 	  animation: opac 0.8s reverse forwards;
 	}
@@ -34,7 +34,7 @@
 	  }
 	}
 
-	.Janko-top {
+	.animate-top {
 	  position: relative;
 	  -webkit-animation: animatetop 0.4s;
 	  animation: animatetop 0.4s
@@ -62,7 +62,7 @@
 	  }
 	}
 
-	.Janko-bottom {
+	.animate-bottom {
 	  position: relative;
 	  -webkit-animation: animatebottom 0.4s;
 	  animation: animatebottom 0.4s
@@ -90,7 +90,7 @@
 	  }
 	}
 
-	.Janko-left {
+	.animate-left {
 	  position: relative;
 	  -webkit-animation: animateleft 0.4s;
 	  animation: animateleft 0.4s
@@ -118,7 +118,7 @@
 	  }
 	}
 
-	.Janko-right {
+	.animate-right {
 	  position: relative;
 	  -webkit-animation: animateright 0.4s;
 	  animation: animateright 0.4s
@@ -146,7 +146,7 @@
 	  }
 	}
 
-	.Janko-zoom {
+	.animate-zoom {
 	  -webkit-animation: animatezoom 0.6s;
 	  animation: animatezoom 0.6s
 	}
@@ -171,24 +171,24 @@
 
 
 	/* Mogelijkheid om individuele attributen aan te passen zoals duur, richting 
-	maar NIET de beweging zelf (bv. verder schuiven bij .Janko-top is niet mogelijk)*/
+	maar NIET de beweging zelf (bv. verder schuiven bij .animate-top is niet mogelijk)*/
 
-	.Janko-duration {
+	.animate-duration {
 	  -webkit-animation-duration: 4s;
 	  animation-duration: 4s;
 	}
 
-	.Janko-timing {
+	.animate-timing {
 	  -webkit-animation-timing-function: linear;
 	  animation-timing-function: linear;
 	}
 
 
 	/*==========================CONTROL==========================*/
-	.Janko-restart {} /*Only used for restarting animations, not altering styling*/
+	.animate-restart {} /*Only used for restarting animations, not altering styling*/
 
 	/*=========Test animations - werken nog niet (goed)=========*/
-	.Janko-bounce {
+	.animate-bounce {
 	  position: relative;
 	  animation: bounce 1.2s 1;
 	}
@@ -211,7 +211,7 @@
 	  }
 	}
 
-	.Janko-topright {
+	.animate-topright {
 	  position: absolute;
 	  -webkit-animation: animatetopright 4s;
 	  animation: animatetopright 4s
